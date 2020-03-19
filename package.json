@@ -1,0 +1,23 @@
+{
+  "name": "lexer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "antlr4-js": "java -Xmx500M -cp '/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH' org.antlr.v4.Tool  -Dlanguage=JavaScript -lib grammars -o lib -visitor -Xexact-output-dir grammars/ECMAScript.g4",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uleecsei/Lexer-js.git"
+  },
+  "author": "Oleksii Buchko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uleecsei/Lexer-js/issues"
+  },
+  "homepage": "https://github.com/uleecsei/Lexer-js#readme",
+  "dependencies": {
+    "antlr4": "^4.8.0"
+  }
+}
